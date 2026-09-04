@@ -6,41 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Our Memories ❤️</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <body>
+    <header class="hero">
 
-    <<header class="hero">
+        <div class="hero-content">
 
-    <div class="hero-content">
+            <p class="hero-small">OUR STORY</p>
 
-        <p class="hero-small"OUR STORY</p>
+            <h1>12 Months of Us ❤️</h1>
 
-        <h1>12 Months of Us ❤️</h1>
+            <p class="hero-subtitle">
+                A little collection of the moments that made our story special.
+            </p>
 
-        <p class="hero-subtitle">
-            A little collection of the moments that made our story special.
-        </p>
+            <div class="hero-line"></div>
 
-        <div class="hero-line"></div>
+            <p class="hero-note">
+                One month at a time. One memory at a time.
+            </p>
 
-        <p class="hero-note">
-            One month at a time. One memory at a time.
-        </p>
+        </div>
 
-    </div>
+    </header>
 
-</header>
 
     <main>
 
         <section>
+
             <h2>Our 12 Months</h2>
 
             <div class="memory-row">
+
 
                 <div class="memory-card" onclick="openMemory('Month 1')">
                     <div class="memory-image">❤️</div>
@@ -48,11 +50,13 @@
                     <p>Where our story began.</p>
                 </div>
 
+
                 <div class="memory-card" onclick="openMemory('Month 2')">
                     <div class="memory-image">💕</div>
                     <h3>Month 2</h3>
                     <p>Another beautiful chapter.</p>
                 </div>
+
 
                 <div class="memory-card" onclick="openMemory('Month 3')">
                     <div class="memory-image">🌸</div>
@@ -60,11 +64,13 @@
                     <p>More memories together.</p>
                 </div>
 
+
                 <div class="memory-card" onclick="openMemory('Month 4')">
                     <div class="memory-image">✨</div>
                     <h3>Month 4</h3>
                     <p>Moments worth remembering.</p>
                 </div>
+
 
                 <div class="memory-card" onclick="openMemory('Month 5')">
                     <div class="memory-image">🫶</div>
@@ -72,11 +78,13 @@
                     <p>Another part of our story.</p>
                 </div>
 
+
                 <div class="memory-card" onclick="openMemory('Month 6')">
                     <div class="memory-image">🌙</div>
                     <h3>Month 6</h3>
                     <p>Halfway through our journey.</p>
                 </div>
+
 
                 <div class="memory-card" onclick="openMemory('Month 7')">
                     <div class="memory-image">💗</div>
@@ -84,11 +92,13 @@
                     <p>Still making memories.</p>
                 </div>
 
+
                 <div class="memory-card" onclick="openMemory('Month 8')">
                     <div class="memory-image">🌷</div>
                     <h3>Month 8</h3>
                     <p>Another special chapter.</p>
                 </div>
+
 
                 <div class="memory-card" onclick="openMemory('Month 9')">
                     <div class="memory-image">🦋</div>
@@ -96,17 +106,20 @@
                     <p>Memories that stay forever.</p>
                 </div>
 
+
                 <div class="memory-card" onclick="openMemory('Month 10')">
                     <div class="memory-image">⭐</div>
                     <h3>Month 10</h3>
                     <p>Ten months of memories.</p>
                 </div>
 
+
                 <div class="memory-card" onclick="openMemory('Month 11')">
                     <div class="memory-image">🎀</div>
                     <h3>Month 11</h3>
-                    <p>Almost at our special day.</p>
+                    <p>Almost one whole year of us.</p>
                 </div>
+
 
                 <div class="memory-card" onclick="openMemory('Month 12')">
                     <div class="memory-image">❤️</div>
@@ -114,10 +127,13 @@
                     <p>Our first anniversary. ❤️</p>
                 </div>
 
+
             </div>
+
         </section>
 
     </main>
+
 
     <!-- Memory Popup -->
 
@@ -129,21 +145,32 @@
 
             <h2 id="popupTitle">Month 1</h2>
 
-  <video id="memoryVideo" class="memory-video" controls>
-    <source id="videoSource" src="" type="video/mp4">
-    Your browser does not support video.
-</video>
 
-<h3 class="gallery-title">Our Moments 📸</h3>
+            <video id="memoryVideo" class="memory-video" controls>
 
-<div id="photoGallery" class="photo-gallery">
-<p id="popupText">
+                <source id="videoSource" src="" type="video/mp4">
+
+                Your browser does not support video.
+
+            </video>
+
+
+            <h3 class="gallery-title">Our Moments 📸</h3>
+
+
+            <div id="photoGallery" class="photo-gallery">
+            </div>
+
+
+            <p id="popupText">
                 Our special memories from this month.
             </p>
+
 
         </div>
 
     </div>
+
 
     <script src="script.js"></script>
 
