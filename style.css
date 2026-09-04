@@ -857,3 +857,265 @@ section {
     }
 
 }
+/* =========================================
+   PREMIUM MONTH CARD DESIGN
+   ========================================= */
+
+.memory-row {
+    gap: 24px;
+}
+
+
+/* Card */
+
+.memory-card {
+    position: relative;
+
+    min-height: 250px;
+
+    padding: 0;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    border: 1px solid #333;
+
+    background: #181818;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+/* Card hover */
+
+.memory-card:hover {
+    transform: scale(1.06) translateY(-8px);
+
+    border-color: #666;
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.7);
+}
+
+
+/* Card image */
+
+.memory-image {
+    height: 230px;
+
+    border-radius: 0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #444,
+            #222 60%,
+            #111
+        );
+
+    font-size: 65px;
+
+    transition:
+        transform 0.5s ease,
+        filter 0.5s ease;
+}
+
+
+/* Zoom image when hovering */
+
+.memory-card:hover .memory-image {
+    transform: scale(1.08);
+
+    filter: brightness(0.8);
+}
+
+
+/* Dark gradient over image */
+
+.memory-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.95),
+            rgba(0, 0, 0, 0.15) 70%,
+            transparent
+        );
+}
+
+
+/* Month title */
+
+.memory-card h3 {
+    position: absolute;
+
+    left: 18px;
+    bottom: 38px;
+
+    margin: 0;
+
+    z-index: 5;
+
+    font-size: 21px;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* Description */
+
+.memory-card p {
+    position: absolute;
+
+    left: 18px;
+    bottom: 15px;
+
+    margin: 0;
+
+    z-index: 5;
+
+    color: #bdbdbd;
+
+    font-size: 13px;
+}
+
+
+/* Small number indicator */
+
+.memory-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 14px;
+    left: 14px;
+
+    z-index: 10;
+
+    padding: 5px 9px;
+
+    border-radius: 5px;
+
+    background: rgba(0, 0, 0, 0.65);
+
+    color: #ddd;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
+
+
+/* Give every card its month number */
+
+.memory-card:nth-child(1)::before {
+    content: "01";
+}
+
+.memory-card:nth-child(2)::before {
+    content: "02";
+}
+
+.memory-card:nth-child(3)::before {
+    content: "03";
+}
+
+.memory-card:nth-child(4)::before {
+    content: "04";
+}
+
+.memory-card:nth-child(5)::before {
+    content: "05";
+}
+
+.memory-card:nth-child(6)::before {
+    content: "06";
+}
+
+.memory-card:nth-child(7)::before {
+    content: "07";
+}
+
+.memory-card:nth-child(8)::before {
+    content: "08";
+}
+
+.memory-card:nth-child(9)::before {
+    content: "09";
+}
+
+.memory-card:nth-child(10)::before {
+    content: "10";
+}
+
+.memory-card:nth-child(11)::before {
+    content: "11";
+}
+
+.memory-card:nth-child(12)::before {
+    content: "12";
+}
+
+
+/* Hover shine */
+
+.memory-card::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 50%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.08),
+            transparent
+        );
+
+    transform: skewX(-20deg);
+
+    transition: left 0.6s ease;
+
+    pointer-events: none;
+}
+
+.memory-card:hover::after {
+    left: 150%;
+}
+
+
+/* Mobile */
+
+@media (max-width: 900px) {
+
+    .memory-card:hover {
+        transform: scale(1.03) translateY(-4px);
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .memory-image {
+        height: 210px;
+    }
+
+}
