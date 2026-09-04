@@ -126,17 +126,40 @@ const memories = {
 function openMemory(month) {
 
     const popup = document.getElementById("memoryPopup");
-
     const title = document.getElementById("popupTitle");
-
     const text = document.getElementById("popupText");
 
-    title.textContent = month;
+    const video = document.getElementById("memoryVideo");
+    const videoSource = document.getElementById("videoSource");
 
-    text.textContent = memories[month].text;
+    const gallery = document.getElementById("photoGallery");
+
+    const memory = memories[month];
+
+    title.textContent = month;
+    text.textContent = memory.text;
+
+    // Load video
+    videoSource.src = memory.video;
+    video.load();
+
+    // Load photos
+    gallery.innerHTML = "";
+
+    memory.photos.forEach(function(photo) {
+
+        const img = document.createElement("img");
+
+        img.src = photo;
+        img.alt = month + " memory";
+
+        img.className = "memory-photo";
+
+        gallery.appendChild(img);
+
+    });
 
     popup.style.display = "flex";
-
 }
 
 
