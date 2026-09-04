@@ -190,3 +190,24 @@ function closeMemory() {
     document.body.style.overflow = "";
 
 }
+/* =========================================
+   OPENING SCREEN
+   ========================================= */
+
+function enterStory() {
+
+    const openingScreen =
+        document.getElementById("openingScreen");
+
+    openingScreen.style.opacity = "0";
+
+    openingScreen.style.transition =
+        "opacity 0.8s ease";
+
+    setTimeout(function() {
+
+        openingScreen.style.display = "none";
+
+    }, 800);
+
+}
