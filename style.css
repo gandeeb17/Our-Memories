@@ -1283,3 +1283,74 @@ main {
     }
 
 }
+/* =========================================
+   TEMPORARY CINEMATIC THUMBNAILS
+   ========================================= */
+
+.memory-image {
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Each month gets its own cinematic look */
+
+.memory-card:nth-child(1) .memory-image {
+    background:
+        radial-gradient(circle at 30% 30%, #555, #222 55%, #111);
+}
+
+.memory-card:nth-child(2) .memory-image {
+    background:
+        radial-gradient(circle at 70% 30%, #555, #242424 55%, #111);
+}
+
+.memory-card:nth-child(3) .memory-image {
+    background:
+        radial-gradient(circle at 40% 60%, #555, #202020 55%, #111);
+}
+
+.memory-card:nth-child(4) .memory-image {
+    background:
+        radial-gradient(circle at 70% 60%, #555, #252525 55%, #111);
+}
+
+.memory-card:nth-child(5) .memory-image {
+    background:
+        radial-gradient(circle at 30% 70%, #555, #222 55%, #111);
+}
+
+.memory-card:nth-child(6) .memory-image {
+    background:
+        radial-gradient(circle at 50% 30%, #666, #222 55%, #111);
+}
+
+.memory-card:nth-child(7) .memory-image {
+    background:
+        radial-gradient(circle at 60% 50%, #555, #242424 55%, #111);
+}
+
+.memory-card:nth-child(8) .memory-image {
+    background:
+        radial-gradient(circle at 30% 40%, #666, #222 55%, #111);
+}
+
+.memory-card:nth-child(9) .memory-image {
+    background:
+        radial-gradient(circle at 70% 70%, #555, #202020 55%, #111);
+}
+
+.memory-card:nth-child(10) .memory-image {
+    background:
+        radial-gradient(circle at 50% 60%, #666, #252525 55%, #111);
+}
+
+.memory-card:nth-child(11) .memory-image {
+    background:
+        radial-gradient(circle at 40% 30%, #555, #222 55%, #111);
+}
+
+.memory-card:nth-child(12) .memory-image {
+    background:
+        radial-gradient(circle at 60% 40%, #666, #202020 55%, #111);
+}
