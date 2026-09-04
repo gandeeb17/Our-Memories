@@ -26,3 +26,47 @@ h2 {
     font-size: 28px;
     margin-bottom: 15px;
 }
+section {
+    margin-top: 40px;
+}
+
+.memory-row {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.memory-card {
+    min-width: 230px;
+    background-color: #222;
+    border-radius: 8px;
+    padding: 12px;
+    transition: transform 0.3s;
+}
+
+.memory-card:hover {
+    transform: scale(1.05);
+}
+
+.memory-image {
+    height: 130px;
+    background-color: #333;
+    border-radius: 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 50px;
+}
+
+.memory-card h3 {
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+.memory-card p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
