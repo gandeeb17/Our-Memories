@@ -136,35 +136,57 @@ function openMemory(month) {
 
     const memory = memories[month];
 
+    if (!memory) {
+        return;
+    }
+
+    // Set title and message
     title.textContent = month;
     text.textContent = memory.text;
 
-    // Load video
+    // Stop previous video
+    video.pause();
+
+    // Load new video
     videoSource.src = memory.video;
     video.load();
 
-    // Load photos
+    // Clear old photos
     gallery.innerHTML = "";
 
+    // Add photos
     memory.photos.forEach(function(photo) {
 
         const img = document.createElement("img");
 
         img.src = photo;
         img.alt = month + " memory";
-
         img.className = "memory-photo";
 
         gallery.appendChild(img);
 
     });
 
+    // Show popup
     popup.style.display = "flex";
+
+    // Prevent page from scrolling behind popup
+    document.body.style.overflow = "hidden";
 }
 
 
 function closeMemory() {
 
-    document.getElementById("memoryPopup").style.display = "none";
+    const popup = document.getElementById("memoryPopup");
+    const video = document.getElementById("memoryVideo");
+
+    // Stop video
+    video.pause();
+
+    // Hide popup
+    popup.style.display = "none";
+
+    // Allow page scrolling again
+    document.body.style.overflow = "";
 
 }
