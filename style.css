@@ -371,3 +371,98 @@ section {
     }
 
 }
+/* Anniversary Card Upgrade */
+
+.memory-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #333;
+    background: linear-gradient(
+        145deg,
+        #242424,
+        #151515
+    );
+}
+
+.memory-card:hover {
+    transform: scale(1.07) translateY(-5px);
+    border-color: #555;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+.memory-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.memory-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.45),
+        transparent
+    );
+}
+
+.memory-card h3 {
+    position: relative;
+    z-index: 2;
+}
+
+.memory-card p {
+    position: relative;
+    z-index: 2;
+}
+
+/* Staggered card animation */
+
+.memory-card:nth-child(1) {
+    animation-delay: 0.05s;
+}
+
+.memory-card:nth-child(2) {
+    animation-delay: 0.10s;
+}
+
+.memory-card:nth-child(3) {
+    animation-delay: 0.15s;
+}
+
+.memory-card:nth-child(4) {
+    animation-delay: 0.20s;
+}
+
+.memory-card:nth-child(5) {
+    animation-delay: 0.25s;
+}
+
+.memory-card:nth-child(6) {
+    animation-delay: 0.30s;
+}
+
+.memory-card:nth-child(7) {
+    animation-delay: 0.35s;
+}
+
+.memory-card:nth-child(8) {
+    animation-delay: 0.40s;
+}
+
+.memory-card:nth-child(9) {
+    animation-delay: 0.45s;
+}
+
+.memory-card:nth-child(10) {
+    animation-delay: 0.50s;
+}
+
+.memory-card:nth-child(11) {
+    animation-delay: 0.55s;
+}
+
+.memory-card:nth-child(12) {
+    animation-delay: 0.60s;
+}
