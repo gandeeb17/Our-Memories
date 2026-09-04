@@ -11,93 +11,123 @@
 
 <body>
 
+    <body>
+
     <header>
-    <h1>Our Memories ❤️</h1>
-    <p>A little place for all our favorite moments.</p>
-</header>
+        <h1>Our Memories ❤️</h1>
+        <p>12 months. Countless memories. One beautiful story.</p>
+    </header>
 
-<main>
+    <main>
 
-    <section>
-    <h2>Our Memories</h2>
+        <section>
+            <h2>Our 12 Months</h2>
 
-    <div class="memory-row">
+            <div class="memory-row">
 
-        <div class="memory-card">
-            <div class="memory-image">❄️</div>
-            <h3>January</h3>
-            <p>Our first memory of the year.</p>
-        </div>
+                <div class="memory-card" onclick="openMemory('Month 1')">
+                    <div class="memory-image">❤️</div>
+                    <h3>Month 1</h3>
+                    <p>Where our story began.</p>
+                </div>
 
-        <div class="memory-card">
-            <div class="memory-image">💕</div>
-            <h3>February</h3>
-            <p>A month full of beautiful moments.</p>
-        </div>
+                <div class="memory-card" onclick="openMemory('Month 2')">
+                    <div class="memory-image">💕</div>
+                    <h3>Month 2</h3>
+                    <p>Another beautiful chapter.</p>
+                </div>
 
-        <div class="memory-card">
-            <div class="memory-image">🌸</div>
-            <h3>March</h3>
-            <p>Another month with you.</p>
-        </div>
+                <div class="memory-card" onclick="openMemory('Month 3')">
+                    <div class="memory-image">🌸</div>
+                    <h3>Month 3</h3>
+                    <p>More memories together.</p>
+                </div>
 
-        <div class="memory-card">
-            <div class="memory-image">🌷</div>
-            <h3>April</h3>
-            <p>Memories I want to keep forever.</p>
-        </div>
+                <div class="memory-card" onclick="openMemory('Month 4')">
+                    <div class="memory-image">✨</div>
+                    <h3>Month 4</h3>
+                    <p>Moments worth remembering.</p>
+                </div>
 
-        <div class="memory-card">
-            <div class="memory-image">🌿</div>
-            <h3>May</h3>
-            <p>More moments, more memories.</p>
-        </div>
+                <div class="memory-card" onclick="openMemory('Month 5')">
+                    <div class="memory-image">🫶</div>
+                    <h3>Month 5</h3>
+                    <p>Another part of our story.</p>
+                </div>
 
-        <div class="memory-card">
-            <div class="memory-image">☀️</div>
-            <h3>June</h3>
-            <p>A beautiful chapter of us.</p>
-        </div>
+                <div class="memory-card" onclick="openMemory('Month 6')">
+                    <div class="memory-image">🌙</div>
+                    <h3>Month 6</h3>
+                    <p>Halfway through our journey.</p>
+                </div>
 
-        <div class="memory-card">
-            <div class="memory-image">🌻</div>
-            <h3>July</h3>
-            <p>One of my favorite months.</p>
-        </div>
+                <div class="memory-card" onclick="openMemory('Month 7')">
+                    <div class="memory-image">💗</div>
+                    <h3>Month 7</h3>
+                    <p>Still making memories.</p>
+                </div>
 
-        <div class="memory-card">
-            <div class="memory-image">🌈</div>
-            <h3>August</h3>
-            <p>Another memory to remember.</p>
-        </div>
+                <div class="memory-card" onclick="openMemory('Month 8')">
+                    <div class="memory-image">🌷</div>
+                    <h3>Month 8</h3>
+                    <p>Another special chapter.</p>
+                </div>
 
-        <div class="memory-card">
-            <div class="memory-image">🍂</div>
-            <h3>September</h3>
-            <p>Still making memories together.</p>
-        </div>
+                <div class="memory-card" onclick="openMemory('Month 9')">
+                    <div class="memory-image">🦋</div>
+                    <h3>Month 9</h3>
+                    <p>Memories that stay forever.</p>
+                </div>
 
-        <div class="memory-card">
-            <div class="memory-image">🎃</div>
-            <h3>October</h3>
-            <p>A special month in our story.</p>
-        </div>
+                <div class="memory-card" onclick="openMemory('Month 10')">
+                    <div class="memory-image">⭐</div>
+                    <h3>Month 10</h3>
+                    <p>Ten months of memories.</p>
+                </div>
 
-        <div class="memory-card">
-            <div class="memory-image">🍁</div>
-            <h3>November</h3>
-            <p>Another chapter worth keeping.</p>
-        </div>
+                <div class="memory-card" onclick="openMemory('Month 11')">
+                    <div class="memory-image">🎀</div>
+                    <h3>Month 11</h3>
+                    <p>Almost at our special day.</p>
+                </div>
 
-        <div class="memory-card">
-            <div class="memory-image">🎄</div>
-            <h3>December</h3>
-            <p>Ending the year with beautiful memories.</p>
+                <div class="memory-card" onclick="openMemory('Month 12')">
+                    <div class="memory-image">❤️</div>
+                    <h3>Month 12</h3>
+                    <p>Our first anniversary. ❤️</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Memory Popup -->
+
+    <div id="memoryPopup" class="memory-popup">
+
+        <div class="popup-content">
+
+            <button class="close-button" onclick="closeMemory()">✕</button>
+
+            <h2 id="popupTitle">Month 1</h2>
+
+            <div class="video-placeholder">
+                🎬
+                <p>Your video will appear here</p>
+            </div>
+
+            <p id="popupText">
+                Our special memories from this month.
+            </p>
+
         </div>
 
     </div>
-</section>
-</main>
+
+    <script src="script.js"></script>
+
+</body>
 </body>
 
 </html>
