@@ -466,3 +466,107 @@ section {
 .memory-card:nth-child(12) {
     animation-delay: 0.60s;
 }
+/* Anniversary Hero */
+
+.hero {
+    min-height: 55vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+
+    margin: -40px -40px 50px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #333 0%,
+            #181818 45%,
+            #141414 100%
+        );
+}
+
+.hero-content {
+    max-width: 750px;
+    padding: 40px 20px;
+
+    animation: heroAppear 1s ease;
+}
+
+.hero-small {
+    color: #999;
+    font-size: 13px;
+    letter-spacing: 5px;
+
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 7vw, 80px);
+
+    margin-bottom: 20px;
+
+    letter-spacing: -2px;
+}
+
+.hero-subtitle {
+    color: #c7c7c7;
+
+    font-size: 19px;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+.hero-line {
+    width: 80px;
+    height: 2px;
+
+    background-color: #777;
+
+    margin: 0 auto 20px;
+}
+
+.hero-note {
+    color: #777;
+
+    font-size: 14px;
+
+    margin-bottom: 0;
+}
+
+@keyframes heroAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .hero {
+        margin: -20px -20px 40px;
+        min-height: 50vh;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+}
